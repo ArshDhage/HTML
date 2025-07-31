@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form tag in HTML</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Admission Form</legend>
+            <!--Form tag in html-->
+            <!-- Personal information-->
+            <label>Enter your First name:</label>
+            <input type="text">
+            <label>Enter your Last name:</label>
+            <input type="text">
+            <br />
+            <br />
+            <label>Enter your age:</label>
+            <input type="number">
+            <label>Date of Birth</label>
+            <input type="datetime-local">
+            <br />
+            <br />
+            <!-- Contact information-->
+            <label>Enter your email:</label>
+            <input type="email">
+            <label>Enter mobile number:</label>
+            <input type="number">
+            <br />
+            <br />
+            <label>Enter your address</label>
+            <input type="text">
+            <br />
+            </br>
+            <label for="courses">Select your Courses:</label>
+            <select name="courses" ide="">
+                <optgroup label="Backend">
+                    <option value="Python">Python</option>
+                    <option value="C">C</option>
+                    <option value="Java">Java</option>
+                </optgroup>
+                <optgroup label="Frontend">
+                    <option value="Designing">Designing</option>
+                    <option value="Web Layouting">Web Layouting</option>
+                    <option value="Javascript">Javascript</option>
+                </optgroup>
+                <optgroup label="Communication">
+                    <option value="english">English</option>
+                    <option value="soft-skilla">Soft-skills</option>
+                    <option value="interview-practice">Interview-practice</option>
+                </optgroup>
+            </select>
+            <br />
+            <br />
+            <label for="Communication">Range your Communication Skills</label>
+            <input type="range" name="communication" min="0" max="10">
+            <!-- input type radio-->
+            <input type="radio" name="gender">
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <lable>Female</lable>
+            <br />
+            <br />
+            <label>Select Hobbies</label>
+            <input type="checkbox"><label>Reading</label>
+            <input type="checkbox"><label>Writing</label>
+            <input type="checkbox"><label>Playing</label>
+            <input type="checkbox"><label>Swimming</label>
+            <br />
+            <br />
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br />
+</body>
+
+</html>
