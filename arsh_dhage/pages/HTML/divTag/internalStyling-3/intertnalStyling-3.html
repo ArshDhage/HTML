@@ -20,10 +20,11 @@
         }
 
         .main-container {
-            height: 97.5vh;
-            width: 98vw;
+            height: 200vh;
+            width: 100vw;
             background-color: aqua;
             font-family: "Asimovian", sans-serif;
+            position: relative;
 
         }
 
@@ -35,6 +36,9 @@
             font-size: 30px;
             text-shadow: 3px 3px 1px orangered;
             box-shadow: 5px 3px 5px;
+            /* position: absolute; */
+            /* top: 50px;
+            left: 300px; */
         }
 
         .box-2 {
@@ -43,7 +47,8 @@
             background-color: grey;
             font-family: "Libertinus Keyboard", system-ui;
             border-radius: 10%;
-            position: static;
+            position: relative;
+            margin-left: 20px;
         }
 
         .box-3 {
@@ -54,13 +59,50 @@
             font-size: 30px;
             text-shadow: 3px 3px 1px orangered;
             box-shadow: 5px 3px 5px;
+            position: static;
+            top: 400px;
+            margin-bottom: 300px;
+
+        }
+
+        .box-4 {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(98, 146, 202);
+            font-family: "Story Script", cursive;
+            font-size: 30px;
+            text-shadow: 3px 3px 1px orangered;
+            box-shadow: 5px 3px 5px;
+            position: fixed;
+        }
+
+        .box-5 {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(180, 68, 213);
+            font-family: "Story Script", cursive;
+            font-size: 30px;
+            text-shadow: 3px 3px 1px orangered;
+            box-shadow: 5px 3px 5px;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+        }
+
+        .box-6 {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(238, 129, 129);
+            font-family: "Libertinus Keyboard", system-ui;
+            border-radius: 10%;
+            position: initial;
 
         }
     </style>
 </head>
 
 <body>
-    <!-- internal styling using <link></<link> -->
+    <!-- internal styling using <style></style> -->
     <div class="main-container">
         <div class="box-1">
             <p>India is my country, All indians are my brothers and sisters </p>
@@ -70,8 +112,16 @@
         </div>
         <div class="box-3">
             <p>I Shall always strive to be worthy of it. I shall give my parents, teachers and all elders respect and
-                treat
-                everyone with courtsey</p>
+                treat everyone with courtsey</p>
+        </div>
+        <div class="box-4">
+            <p>Jai Hind</p>
+        </div>
+        <div class="box-5">
+            <p>kgjsfhjk</p>
+        </div>
+        <div class="box-6">
+            <p>gisuy</p>
         </div>
     </div>
 </body>
