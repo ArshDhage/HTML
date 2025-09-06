@@ -22,15 +22,20 @@
         .main-container {
             height: 100vh;
             width: 100vw;
-            background-color: aqua;
-            border: 2xp solid black;
+            background-color: rgb(122, 228, 228);
+            border: 3xp solid black;
             font-family: "Asimovian", sans-serif;
-            position: relative;
+            font-size: 20px;
+            /* position: relative; */
             box-sizing: border-box;
-            overflow: auto; 
+            text-align: center;
+            overflow: scroll;
             display: flex;
-            flex-wrap: wrap;   
-            align-content: flex-start;
+            flex-direction: row;
+            /* it works on main- axis if f-d; row then y- axis in f-d: col then X-axis*/
+            align-items: center;
+            /* it works on main- axis if f-d; row then y- axis in f-d: col then X-axis*/
+            justify-content: center;
         }
 
         p {
@@ -40,12 +45,11 @@
         .box-1 {
             height: 20%;
             width: 30%;
-            background-color: lightcoral;
+            background-color: hotpink;
             font-family: "Story Script", cursive;
-            font-size: 30px;
             text-shadow: 3px 3px 1px orangered;
             box-shadow: 5px 3px 5px;
-            
+
         }
 
         .box-2 {
@@ -61,9 +65,8 @@
         .box-3 {
             height: 20%;
             width: 30%;
-            background-color: rgb(239, 139, 211);
+            background-color: rgb(241, 93, 67);
             font-family: "Story Script", cursive;
-            font-size: 30px;
             text-shadow: 3px 3px 1px orangered;
             box-shadow: 5px 3px 5px;
             /* position: static;
@@ -77,7 +80,6 @@
             width: 30%;
             background-color: rgb(98, 146, 202);
             font-family: "Story Script", cursive;
-            font-size: 30px;
             text-shadow: 3px 3px 1px orangered;
             box-shadow: 5px 3px 5px;
             /* position: fixed; */
@@ -88,7 +90,6 @@
             width: 30%;
             background-color: rgb(180, 68, 213);
             font-family: "Story Script", cursive;
-            font-size: 30px;
             text-shadow: 3px 3px 1px orangered;
             box-shadow: 5px 3px 5px;
             /* position: sticky;
@@ -112,23 +113,22 @@
     <!-- internal styling using <style></style> -->
     <div class="main-container">
         <div class="box-1">
-            <p>India is my country, All indians are my brothers and sisters </p>
+            Dr. Rsjendra Prasad
         </div>
         <div class="box-2">
-            <p>I love my country, and I am proud of its rich and varid heritage.</p>
+            Dr. Rajendra Prasad
         </div>
         <div class="box-3">
-            <p>I Shall always strive to be worthy of it. I shall give my parents, teachers and all elders respect and
-                treat everyone with courtsey</p>
+            Dr. Rajendra Prasad
         </div>
         <div class="box-4">
-            <p>Jai Hind</p>
+            Dr. Rajendra Prasad
         </div>
         <div class="box-5">
-            <p>kgjsfhjk</p>
+            Dr. Rajendra Prasad
         </div>
         <div class="box-6">
-            <p>gisuy</p>
+            Dr. Rajendra Prasad
         </div>
     </div>
 </body>
