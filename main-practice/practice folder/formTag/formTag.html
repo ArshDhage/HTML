@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Tag</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Admission Form</legend>
+            <!--Personal Info-->
+            <label for="file"></label><label>Enter Passport sized Photo</label>
+            <input type="file">
+            <br><br>
+            <label>Enter Admission Date:</label>
+            <input type="datetime-local">
+            <br><br>
+            <label for="time">What time do you want to join</label>
+            <input type="time">
+            <br><br>
+            <label for="hidden"> hidden </label>
+            <input type="hidden">
+            <br><br>
+            <input type="image" src="">
+            <br><br>
+            <input type="month">
+            <input type="week">
+            <br><br>
+            <label>Enter first name:</label>
+            <input type="text">
+            <label>Enter middle name:</label>
+            <input type="text">
+            <label>Enter last name:</label>
+            <input type="text">
+            <br><br>
+            <label>Enter your Age:</label>
+            <input type="number">
+            <label>Date of Birth:</label>
+            <input type="datetime-local">
+            <br><br>
+            <!--Contact Info-->
+            <label>Your Mobile number:</label>
+            <input type="number">
+            <label>Parents/ Guardian Mobile number:</label>
+            <input type="number">
+            <input type="number">
+            <br><br>
+            <label>Your email:</label>
+            <input type="email">
+            <input type="password">
+            <label>Parent/ Guardian's email:</label>
+            <input type="email">
+            <br><br>
+            <label>Address:</label>
+            <textarea name="address"></textarea>
+            <label>Enter your Addhar:</label>
+            <input type="number">
+            <br><br>
+            <label for="courses">Select your Courses:</label>
+            <select name="courses" ide="">
+                <optgroup label="Backend">
+                    <option value="Python">Python</option>
+                    <option value="C">C</option>
+                    <option value="Java">Java</option>
+                    <option value="Javascript">Javascript</option>
+                </optgroup>
+                <optgroup label="Communication">
+                    <option value="english">English</option>
+                    <option value="soft-skilla">Soft-skills</option>
+                    <option value="interview-practice">Interview-practice</option>
+                </optgroup>
+            </select>
+            <br />
+            <br />
+            <!-- input type radio-->
+            <label>Select gender:</label>
+            <input type="radio" name="gender">
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <lable>Female</lable>
+            <br />
+            <br />
+            <label>Select Hobbies</label>
+            <input type="checkbox"><label>Reading</label>
+            <input type="checkbox"><label>Writing</label>
+            <input type="checkbox"><label>Playing</label>
+            <input type="checkbox"><label>Swimming</label>
+            <input type="checkbox"><label>Coding</label>
+            <br />
+            <br />
+
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br />
+</body>
+
+</html>
