@@ -29,13 +29,11 @@
             /* position: relative; */
             box-sizing: border-box;
             text-align: center;
-            overflow: scroll;
+            /* overflow: scroll; */
             display: flex;
             flex-direction: row;
-            /* it works on main- axis if f-d; row then y- axis in f-d: col then X-axis*/
-            align-items: center;
-            /* it works on main- axis if f-d; row then y- axis in f-d: col then X-axis*/
-            justify-content: center;
+            align-items: flex-start; /* flex-end */
+            justify-content: space-around;    /* flex-start, space-evenly, space-between, space-around */
         }
 
         p {
@@ -113,23 +111,23 @@
     <!-- internal styling using <style></style> -->
     <div class="main-container">
         <div class="box-1">
-            Dr. Rsjendra Prasad
+            Dr. Rsjendra Prasad 1
         </div>
         <div class="box-2">
-            Dr. Rajendra Prasad
+            Dr. Rajendra Prasad 2
         </div>
         <div class="box-3">
-            Dr. Rajendra Prasad
+            Dr. Rajendra Prasad 3
         </div>
-        <div class="box-4">
-            Dr. Rajendra Prasad
+        <!-- <div class="box-4">
+            Dr. Rajendra Prasad 4
         </div>
         <div class="box-5">
-            Dr. Rajendra Prasad
+            Dr. Rajendra Prasad 5
         </div>
         <div class="box-6">
-            Dr. Rajendra Prasad
-        </div>
+            Dr. Rajendra Prasad 5
+        </div> -->
     </div>
 </body>
 
