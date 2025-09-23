@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Document</title>
+    <title>Grid - main</title>
     <style>
-        .main-container{
-            width: 100vw;
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
+        }
+
+        .main-container {
+            width: 500px;
+            height: 500px;
             background-color: lightgreen;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr ;
-            gap: 10px;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* gap: 10px; */
             border: 2px solid black;
+
+
         }
-        .box{
+
+        .box {
+
             background-color: skyblue;
             text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
             border: solid 2px black;
-            border-radius: 8px;
+            /* border-radius: 8px; */
+
+        }
+
+        .big-box {
+            grid-column: span 3;
+        }
+
+        .big-row {
+            grid-row: span 2;
         }
     </style>
 </head>
+
 <body>
+    <!-- division tag -->
     <div class="main-container">
-        <div class="box">1</div>
-        <div class="box">2</div>
+        <div class="box big-box">1</div>
+        <div class="box big-row">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
         <div class="box">5</div>
         <div class="box">6</div>
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
     </div>
 </body>
+
 </html>
