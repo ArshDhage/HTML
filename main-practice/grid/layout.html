@@ -7,23 +7,48 @@
         .main-container{
             height: 100vh;
             width: 100vw;
-            background-color: grey;
-        }
-        .main-box{
-            height: 1000px;
-            width: 800px;
-            background-color: khaki;
+            /* background-color: skyblue; */
+            border: 2px solid black;
             box-sizing: border-box;
-            display: grid;
-            grid-template-columns: 100%;
             justify-content: center;
             align-items: center;
-            gap: 2px white;
         }
-        .box-1{
-            height: 25%;
-            width: 100%;
-            background-color: skyblue;
+        .main-box{
+            height: 700px;
+            width: 1000px;
+            background-color: grey;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* bottom: 2px solid black; */
+        }
+        .box{
+            background-color: lightgreen;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-rowspan{
+            /* width: 15%; */
+            grid-row: span 2;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .box-rowspan-2{
+            grid-row: span 2;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .box-colspan{
+            grid-column: span 2;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .box-rowspan-3{
+            grid-row: span 2;
+            /* grid-column: span 2; */
+            background-color: goldenrod;
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -31,15 +56,33 @@
 <body>
     <div class="main-container">
         <div class="main-box">
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-3"></div>
-            <div class="box-4"></div>
+            <div class="box-rowspan">1</div>
+            <div class="box-colspan">2</div>
+            <!-- <div class="box">3</div> -->
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
 
-            <div class="box-5"></div>
-            <div class="box-6"></div>
-            <div class="box-7"></div>
-            <div class="box-8"></div>
+            <div class="box-rowspan-3">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box-rowspan-2">12</div>
+
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+            <div class="box">18</div>
+
+            <div class="box">19</div>
+            <div class="box">20</div>
+            <div class="box">21</div>
+            <!-- <div class="box">22</div>
+            <div class="box">23</div>
+            <div class="box">24</div> -->
         </div>
     </div>
 </body>
