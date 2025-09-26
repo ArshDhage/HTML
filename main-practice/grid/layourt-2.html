@@ -8,13 +8,41 @@
             width: 1000px;
             background-color: skyblue;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
             border: 2px solid black;
         }
+        .box{
+            border: 2px solid black;
+        }
+        .one{
+            grid-column: span 5;
+        }
+        .two{
+            grid-row: span 3;
+        }
+        .three{
+            grid-column: span 2;
+        }
+        .four{
+            grid-column: span 3;
+        }
+        
     </style>
 </head>
 <body>
-    <div class="main-conatiner"></div>
+    <div class="main-container">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box four">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+    </div>
 </body>
 </html>
