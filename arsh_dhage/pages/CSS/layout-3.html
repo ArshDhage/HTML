@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-container{
+            height: 900px;
+            width: 1000px;
+            background-color: khaki;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 100px auto 80px;
+            grid-template-areas: "header header header"
+            "sidebar main-area extra"
+            "footer footer footer";
+            border: 2px solid black;
+        } 
+        .header{
+            grid-area: header;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: blueviolet;
+            border: 2px solid black;
+        }
+        .main-area{
+            grid-area: main-area;
+            background-color: lightgreen;
+            border: 2px solid black;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: grey;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header"></div>
+        <div class="sidebar"></div>
+        <div class="main-area"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
