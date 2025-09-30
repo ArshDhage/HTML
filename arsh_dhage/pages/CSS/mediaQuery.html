@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>
+        Media Query
+    </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 50px;
+            background-color: red;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        /* dextop (width 550px and above) */
+        @media (max-width: 550px) {
+            bady {
+                background-color: yellowgreen;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- heading tag -->
+    <h1>Resize the window to see the magic!</h1>
+</body>
+
+</html>
