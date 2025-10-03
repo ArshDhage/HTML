@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <title>Layout 3</title>
     <style>
         body {
@@ -19,7 +20,7 @@
             background-color: orangered;
             border: 2px solid black;
             display: grid;
-            grid-template-columns: 150px 1fr 400px;
+            grid-template-columns: 200px 1fr 400px;
             
         }
         .box{
@@ -39,7 +40,10 @@
             grid-row: span 1;
         }
         .five{
-            grid-column: span 1.5;
+            grid-column: span 2;
+        }
+        .six{
+            grid-column: span 1;
         }
     </style>
 </head>
@@ -53,7 +57,7 @@
         <div class="box">4</div>
         <div class="box four">5</div>
         <div class="box five">6</div>
-        <div class="box five">7</div>
+        <div class="box six">7</div>
     </div>
     <!-- division tag end -->
 </body>

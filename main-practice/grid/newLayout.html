@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout 4</title>
+    <style>
+        body{
+            
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .main-container{
+            height: 100%;
+            width: 1400px;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100%;
+            border: 2px solid black;
+        }
+        .one{
+            grid-row: span 2;
+        }
+        .two{
+            grid-column: span 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box" style="height: 150px;">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box " >6</div>
+        <div class="box">7</div>
+    </div>
+</body>
+</html>
