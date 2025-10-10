@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Basics</title>
+    <style>
+        /* CSS Start */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: white;
+            border: 2px solid;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display-area {
+            height: 60%;
+            width: 40%;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-area {
+            height: 90%;
+            width: 90%;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        /* CSS End */
+    </style>
+</head>
+
+<body>
+    <!-- Division Tag Start -->
+    <div class="main-container">
+        <div class="display-area" id="display">
+            <div class="input-area">
+                <input type="text" class="input-field" id="input" placeholder="Type a massage..">
+                <button onclick="showOutput()" Class="send-button">Send</button>
+            </div>
+        </div>
+        <!-- <button>Click Me</button> -->
+    </div>
+    <div class="display-box"></div>
+    <input type="text">
+    <!-- Division Tag End -->
+</body>
+
+<!-- script start -->
+<script>
+    // function => block of code which does a specific task
+function showOutput(){
+    let x = 5
+    console.log(x)
+    console.log("hello world")
+}
+</script>
+<!-- script end -->
+
+</html>
