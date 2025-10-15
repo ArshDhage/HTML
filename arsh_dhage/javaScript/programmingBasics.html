@@ -13,7 +13,7 @@
             background-color: white;
             border: 2px solid;
             display: flex;
-            
+
             justify-content: center;
             align-items: center;
         }
@@ -45,12 +45,17 @@
 <body>
     <!-- Division Tag Start -->
     <div class="main-container">
-        <div class="display-area" id="display">
-            <div class="input-area">
-                <input type="text" class="input-field" id="input" placeholder="Type a massage..">
-                <button onclick="showOutput()" Class="send-button">Send</button>
-            </div>
+        <div class="display-area" id="display"></div>
+        <div class="input-area">
+            <input type="text" class="input-field" id="input" placeholder="Type a massage..">
+            <input type="text" class="input-field" id="input-1" placeholder="Type a massage..">
+
+            <button onclick="showOutput()" Class="send-button">Send</button>
+            <button onclick="subtract()" Class="send-button">Send</button>
+            <button onclick="divide()" Class="send-button">Send</button>
+            <button onclick="multiply()" Class="send-button">Send</button>
         </div>
+
         <!-- <button>Click Me</button> -->
     </div>
     <div class="display-box"></div>
@@ -61,11 +66,35 @@
 <!-- script start -->
 <script>
     // function => block of code which does a specific task
-function showOutput(){
-    let x = 5
-    console.log(x)
-    console.log("hello world")
-}
+    function showOutput() {
+
+
+
+        let x = Number(document.getElementById("input").value);
+        let y = Number(document.getElementById("input-1").value);
+
+        let p = x + y ;
+
+        document.getElementById("display").innerHTML = p;
+    }
+    function subtract(){
+        let x = Number(document.getElementById("input").value);
+        let y = Number(document.getElementById("input-1").value);
+        let s = x - y
+        document.getElementById("display").innerHTML = s;
+    }
+    function divide(){
+        let x = Number(document.getElementById("input").value);
+        let y = Number(document.getElementById("input-1").value);
+        let d = x / y
+        document.getElementById("display").innerHTML = d;
+    }
+    function multiply(){
+        let x = Number(document.getElementById("input").value);
+        let y = Number(document.getElementById("input-1").value);
+        let m = x * y
+        document.getElementById("display").innerHTML = m;
+    }
 </script>
 <!-- script end -->
 
