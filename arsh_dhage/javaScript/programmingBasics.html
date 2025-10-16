@@ -51,9 +51,9 @@
             <input type="text" class="input-field" id="input-1" placeholder="Type a massage..">
 
             <button onclick="showOutput()" Class="send-button">Send</button>
-            <button onclick="subtract()" Class="send-button">Send</button>
+            <!-- <button onclick="subtract()" Class="send-button">Send</button>
             <button onclick="divide()" Class="send-button">Send</button>
-            <button onclick="multiply()" Class="send-button">Send</button>
+            <button onclick="multiply()" Class="send-button">Send</button> -->
         </div>
 
         <!-- <button>Click Me</button> -->
@@ -67,34 +67,18 @@
 <script>
     // function => block of code which does a specific task
     function showOutput() {
-
-
-
+        //input
         let x = Number(document.getElementById("input").value);
         let y = Number(document.getElementById("input-1").value);
+        //process
+        let p = x + y;
+        let s = x - y;
+        let d = x / y;
+        let m = x * y;
+        // output
+        document.getElementById("display").innerHTML = "Sum is : " + p + "<br> Difference is : " + s + "<br> Division is : " + d + "<br> Multiplication is : " + m;
+    }
 
-        let p = x + y ;
-
-        document.getElementById("display").innerHTML = p;
-    }
-    function subtract(){
-        let x = Number(document.getElementById("input").value);
-        let y = Number(document.getElementById("input-1").value);
-        let s = x - y
-        document.getElementById("display").innerHTML = s;
-    }
-    function divide(){
-        let x = Number(document.getElementById("input").value);
-        let y = Number(document.getElementById("input-1").value);
-        let d = x / y
-        document.getElementById("display").innerHTML = d;
-    }
-    function multiply(){
-        let x = Number(document.getElementById("input").value);
-        let y = Number(document.getElementById("input-1").value);
-        let m = x * y
-        document.getElementById("display").innerHTML = m;
-    }
 </script>
 <!-- script end -->
 
