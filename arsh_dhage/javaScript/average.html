@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-container {
+        height: 600px;
+        width: 600px;
+        background-color: skyblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+
+    .box-1 {
+        height: 400px;
+        width: 400px;
+        border: 8px;
+        background-color: white;
+    }
+
+    button {
+        margin-top: 300px;
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <div class="box-1">
+            <div class="display"  id="arsh"></div>
+            <input type="number" class="input-field" id="input" placeholder="Input a number...">
+            <input type="number" class="input-field" id="input-2" placeholder="Input a number...">
+            <input type="number" class="input-field" id="input-3" placeholder="Input a number...">
+
+            <input type="number" class="input-field" id="input-4" placeholder="Input a number...">
+            <input type="number" class="input-field" id="input-5" placeholder="Input a number...">
+        </div>
+        <button class="calculate-button" onclick="average()">Calculate Average</button>
+    </div>
+    <script>
+        function average() {
+            console.log("hello")
+            let x = Number(document.getElementById("input").value);
+            let y = Number(document.getElementById("input-2").value);
+            let z = Number(document.getElementById("input-3").value);
+            a = (x + y + z) / 3;
+            
+            let p = Number(document.getElementById("input-4").value); 
+            let q = Number(document.getElementById("input-3").value);
+            s = (p + q) / 2;
+
+            d = (a + s) / 2;
+            document.getElementById("arsh").innerHTML = "First Average is :" + a + "<br> Second Average is :" + s + "<br> Total Average is :" + d;
+        }
+    </script>
+
+</body>
+
+</html>
