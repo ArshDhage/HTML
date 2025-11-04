@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 500px;
+        width: 500px;
+        background-color: aqua;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <div id="arsh"></div>
+    <input type="text" id="arsh-1" placeholder="Enter a number...">
+    <button onclick="viratKohli()" class="Click me">Click Me</button>
+
+
+</body>
+<script>
+    // input
+    function viratKohli() {
+        let x = prompt("Enter a Number...");
+        let y = Number(document.getElementById("arsh-1").value);
+        let z = (x)*(y);
+        document.getElementById('arsh').innerHTML = z;
+    }
+</script>
+
+</html>
