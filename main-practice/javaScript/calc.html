@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-container{
+        height: 500px;
+        width: 400px;
+        background-color: salmon;
+        display: flex;
+        border-radius: 8px;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .display-area{
+        width: 80%;
+        height: 50%;
+        background-color: grey;
+        border-radius: 8px;
+    }
+
+</style>
+
+<body>
+    <div class="main-container">
+        <div class="display-area">
+            <p id="display"></p>
+        </div>
+        <div class="box-one">
+            <button onclick="clickOne()">1</button>
+            <button onclick="clickTwo()">2</button>
+            <button onclick="clickThree()">3</button>
+            <button onclick="clickFour()">4</button>
+        </div>
+    </div>
+</body>
+<script>
+    function clickOne() {
+        document.getElementById("display").innerHTML += 1;
+    }
+    function clickTwo() {
+        document.getElementById("display").innerHTML += 2;
+    }
+    function clickThree() {
+        document.getElementById("display").innerHTML += 3;
+    }
+    function clickFour() {
+        document.getElementById("display").innerHTML += 4;
+    }
+</script>
+
+</html>
