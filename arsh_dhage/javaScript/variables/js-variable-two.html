@@ -8,7 +8,7 @@
 <body>
     <p id="display"></p>
     <p id="display-2"></p>
-    <button>Add Amount</button>
+    <button onclick="getMoney()">Add Amount</button>
     <script>
         let name = "Sachin Tendulkar"
         console.log("Original name : " + name)
@@ -31,11 +31,13 @@
         let ac = 10000
         document.getElementById("display").innerHTML = ac
 
-        let am = prompt("Enter Amount") 
+        let am = 0 
 
-        ac = ac + Number(am)
-
-        alert("Your Balance is : " + ac)
+        function getMoney(){
+            am = prompt("Emter amount")
+            ac = ac - Number(am)
+            document.getElementById("display-2").innerHTML = am
+        }
     </script>
 </body>
 </html>
