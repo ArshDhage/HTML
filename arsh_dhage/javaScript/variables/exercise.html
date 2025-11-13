@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-one {
+            height: 60%;
+            width: 40%;
+            background-color: aqua;
+            border-radius: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .screen-box {
+            height: 100px;
+            width: 400px;
+            background-color: wheat;
+            margin-top: 80px;
+            margin-left: 40px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        input {
+            height: 40px;
+            width: 180px;
+            margin-left: 15px;
+            margin-top: 40px;
+            border-radius: 10px;
+
+        }
+
+        button {
+            height: 40px;
+            width: 200px;
+            border: none;
+            background-color: green;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<div class="main-container">
+
+        <div class="box-one">
+            <div class="screen-box" id="display"></div>
+
+
+            <input type="text" id="input-1" placeholder="Input One">
+
+            <input type="text" id="input-2" placeholder="Input Two">
+            <br>
+            <button onclick=" Combine() ">Submit</button>
+
+        </div>
+    </div>
+
+<body>
+</body>
+<script>
+        function Combine() {
+            let a = document.getElementById("input-1").value
+            let b = document.getElementById("input-2").value
+            let c = a + b
+            alert(c)
+            document.getElementById("display").innerHTML = "Your input : " + c;
+        }
+    </script>
+
+
+</html>
