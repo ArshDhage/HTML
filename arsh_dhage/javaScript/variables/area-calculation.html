@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Circle</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .main-container{
+        height: 325px;
+        width: 400px;
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-shadow: 5px 5px 50px 2px grey;
+    }
+    .box{
+        height: 150px;
+        width: 150px;
+        background-color: rgb(104, 243, 104);
+        border-radius: 100%;
+        margin-left: 30%;
+    }
+    button{
+        background-color: rgb(104, 243, 104)
+    }
+    .label-1{
+        font-size: 20px;
+        
+    }
+    input{
+        width: 90%;
+        height: 25px;
+    }
+    button{
+        height: 30px;
+        width: 90%;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <label for="">Circle Area Calculator</label>
+        <div class="box"></div>
+        <label class="lable-1" for="">Radius :</label><br>
+        <input type="number" id="area" placeholder="Input value of Radius">
+        <br><br>
+        <button onclick="arsh()">Find Area</button>
+        <p id="arsh">Result :</p>
+    </div>
+</body>
+<script>
+    function arsh(){
+        let a = Number(document.getElementById("area").value);
+        let area = Number(3.14) * a * a;
+        document.getElementById("arsh").innerHTML = area;
+    }
+</script>
+</html>
