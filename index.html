@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .header {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(74, 74, 74);
+            position: fixed;
+            display: flex;
+        }
+
+        .header-box-1 {
+            height: 100%;
+            width: 65%;
+            background-color: wheat;
+        }
+
+        .header-box-2 {
+            height: 100%;
+            width: 35%;
+            background-color: rgb(163, 161, 156);
+            padding-left: 160px;
+        }
+
+        .header-button {
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background-color: #FFFCE6;
+        }
+
+        /* about--section--start */
+        .section-two {
+            height: 70%;
+            width: 100%;
+            display: flex;
+        }
+
+        .about-box-one {
+            height: 100%;
+            width: 40%;
+            background-color: #D9D9D9;
+        }
+
+        /*--------- codder-img */
+        .codder-img {
+            height: 300px;
+            width: 300px;
+            background-color: lightpink;
+            margin-top: 80px;
+            margin-left: 200px;
+        }
+
+        .about-box-two {
+            height: 100%;
+            width: 60%;
+            background-color: #D9D9D9;
+            display: flex;
+            align-items: center;
+        }
+
+        /* ----about--text--start--- */
+        .about-text {
+            height: 450px;
+            width: 600px;
+            background-color: #fffdfd;
+            margin-left: 20px;
+        }
+
+        .project-name {
+            width: 100%;
+            background-color: #FFFCE6;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .section-three {
+            height: 50%;
+            width: 100%;
+            background-color: #FFFCE6;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+        /* */
+        .project-card {
+            height: 350px;
+            width: 350px;
+            background-color: rgb(255, 202, 202);
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img-project {
+            height: 250px;
+            width: 300px;
+            margin-top: 15px;
+            margin-left: 25px;
+        }
+
+        .project-button {
+            height: 40px;
+            width: 140px;
+            border: none;
+            margin-top: 12px;
+            margin-left: 110px;
+            background-color: green;
+        }
+
+        .section-four {
+            height: 60%;
+            width: 100%;
+            background-color: #D9D9D9;
+            display: flex;
+        }
+
+        .contact-box-one {
+            height: 100%;
+            width: 50%;
+        }
+
+        .contact-no {
+            height: 150px;
+            width: 300px;
+            background-color: violet;
+            margin-top: 100px;
+            margin-left: 300px;
+        }
+
+        .github-box {
+            height: 200px;
+            width: 300px;
+            background-color: turquoise;
+            margin-top: 20px;
+            margin-left: 300px;
+        }
+
+        .contact-box-two {
+            height: 100%;
+            width: 50%;
+        }
+
+        .mail-id {
+            height: 150px;
+            width: 300px;
+            background-color: violet;
+            margin-top: 100px;
+            margin-left: 90px;
+        }
+
+        .linkedin-box {
+            height: 200px;
+            width: 300px;
+            background-color: turquoise;
+            margin-top: 20px;
+            margin-left: 90px;
+        }
+    </style>
+</head>
+
+<body> <!-- main-container------start--- -->
+    <div class="main-container">
+        <div class="header">
+            <div class="header-box-1"></div>
+            <div class="header-box-2"> <span class="header-button">Home</span> <span class="header-button"> About</span>
+                <span class="header-button">Project</span> <span class="header-button"> Contact</span> </div>
+        </div> <!-- section-- one -- start -->
+        <div class="section-one"> </div> <!-- section-two-start -->
+        <div class="section-two">
+            <div class="about-box-one"> <!-- codder-img-section -->
+                <div class="codder-img"></div>
+            </div>
+            <div class="about-box-two">
+                <div class="about-text"></div>
+            </div>
+        </div> <!-- section-three-start -->
+        <div class="project-name">Project</div>
+        <div class="section-three">
+            <div class="project-card"> <img class="img-project"
+                    src="https://nestify.io/wp-content/uploads/2024/01/What-is-HTML.jpg" alt=""> <button
+                    class="project-button">View More</button> </div>
+            <div class="project-card"> <img class="img-project" src="https://web.dev/static/css/image/hero-css.png"
+                    alt=""> <button class="project-button">View More</button> </div>
+            <div class="project-card"> <img class="img-project"
+                    src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" alt="">
+                <button class="project-button">View More</button> </div>
+        </div>
+        <div class="project-name">Contact</div>
+        <div class="section-four">
+            <div class="contact-box-one"> <!-- phone no -->
+                <div class="contact-no"></div> <!-- github -->
+                <div class="github-box"></div>
+            </div>
+            <div class="contact-box-two"> <!-- mail-id -->
+                <div class="mail-id"></div> <!-- -->
+                <div class="linkedin-box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
