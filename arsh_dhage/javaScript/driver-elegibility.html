@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <h2>Driver Eligilibity Checker</h2><br>
+        <label>Your Age:</label>
+        <input type="number" id="input" placeholder="Enter Your Age">
+        <input type="checkbox" style="height: 20px;"><h3>I have a valid driver's license</h3>
+        <button onclick="arsh()">Check Eligibility</button>
+        <div class="display-area" id="display"></div>
+    </div>
+</body>
+<script>
+    function arsh(){
+        let a = document.getElementById("input").value;
+        let b = 18;
+        let c = a >= b;
+        document.getElementById("display").innerHTML = c;
+    }
+</script>
+</html>
