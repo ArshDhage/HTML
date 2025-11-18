@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fan Checker</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .container{
+        width: 400px;
+        height: 150px;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        box-shadow: 5px 5px 50px 2px black;
+    }
+    .display-area{
+        height: 20%;
+        width: 90%;
+        border-radius: 10px;
+        margin-left: 20px;
+        background-color: lightgrey;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>JavaScript Fan Checker</h2><br>
+        <div class="display-area" id="display"></div> 
+        <!-- <button>Click</button> -->
+    </div>
+</body>
+<script>
+    let answer = confirm("You are a JavaScript Fan :-")
+    document.getElementById("display").innerHTML = answer;
+</script>
+</html>
