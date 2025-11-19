@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <script>
+        // concat function
+        let string1 = prompt("Enter String 1: ");
+        let string2 = prompt("Enter string 2: ");
+        let string3 = string1.concat(string2);
+        console.log("concated string is : " + string3)
+
+        // uppercase function
+        let upperString = string3.toUpperCase()
+        console.log(upperString)
+
+        // lowercase function
+        let lowerString = upperString.toLowerCase()
+        console.log(lowerString)
+
+        // Length Property
+        let stringLength = lowerString.length
+        console.log(stringLength)
+
+        // charAt function
+        let l1 = lowerString.charAt(0)
+        let l2 = lowerString.charAt(7)
+        console.log(l1.concat(l2))
+
+        // split function
+        let letters = lowerString.split()
+        console.log(letters)
+    </script>
+</body>
+</html>
