@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diameter of Circle</title>
+</head>
+<body>
+    <!-- Find the diameter of circle using diameter -->
+    <div class="main-container">
+        <h2>Radius of Circle</h2>
+        <div class="display-area" id="display"></div>
+        <input id="input" type="number" placeholder="input area">
+        <button onclick="diameter()">Click</button>
+    </div>
+</body>
+<script>
+    function diameter(){
+        let a = document.getElementById("input").value
+        let area = a / 3.14 
+        document.getElementById("display").innerHTML = Math.sqrt(area * 2);
+    }
+    
+</script>
+</html>

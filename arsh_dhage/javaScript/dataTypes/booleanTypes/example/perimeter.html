@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter of Circle</title>
+</head>
+<body>
+    <!-- Find the perimeter of circle using area. -->
+    <div class="main-container">
+        <h2>Radius of Circle</h2>
+        <div class="display-area" id="display"></div>
+        <input id="input" type="number" placeholder="input area">
+        <button onclick="perimeter()">Click</button>
+    </div>
+</body>
+<script>
+    function perimeter(){
+        let d = document.getElementById("input").value
+        let area = d * 3.14 
+        document.getElementById("display").innerHTML = area;
+    }
+</script>
+</html>
