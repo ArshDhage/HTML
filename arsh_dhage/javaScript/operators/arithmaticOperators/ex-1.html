@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum and Difference Calculator</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+
+    }
+</style>
+<body>
+    <div class="main-container">
+        <h2>Paise Converter</h2>
+        <div class="display-area" id="display"></div>
+        <label>First Number :</label><br>
+        <input id="input-1" type="number" placeholder="input your amount"><br>
+        <button onclick="converter()">Convert</button>
+    </div>
+    <script>
+        function converter(){
+            let rupees = document.getElementById("input-1").value
+            let paise = rupees * 100;
+            let aathane = rupees / 0.5;
+            let charane = rupees / 0.25;
+            document.getElementById("display").innerHTML ="Paise : " + paise + "<br> Aathane :" + aathane + "<br> Charane : " + charane;
+
+        }
+    </script>
+</body>
+</html>

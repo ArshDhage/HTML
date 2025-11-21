@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="display-area" id="display-1"></div>
+        <div class="display-area-2" id="display-2"></div>
+        <label>Subject-1 :</label><br>
+        <input type="number" placeholder="input marks" id="input"><br>
+        <label>Subject-2 :</label><br>
+        <input type="number" placeholder="input marks" id="input-2"><br>
+        <label>Subject-3 :</label><br>
+        <input type="number" placeholder="input marks" id="input-3"><br>
+        <label>Subject-4 :</label><br>
+        <input type="number" placeholder="input marks" id="input-4"><br>
+        <label>Subject-5 :</label><br>
+        <input type="number" placeholder="input marks" id="input-5"><br>
+        <button onclick="percentage()">Show Result</button>
+    </div>
+    <script>
+        function percentage(){
+            let a = Number(document.getElementById("input").value);
+            let b = Number(document.getElementById("input-2").value);
+            let c = Number(document.getElementById("input-3").value);
+            let d = Number(document.getElementById("input-4").value);
+            let e = Number(document.getElementById("input-5").value);
+
+            let totalMarks = Number(a + b + c + d + e);
+            document.getElementById("display-1").innerHTML ="Marks out of 500 : " + totalMarks;
+
+            let percentage = (totalMarks / 500) * 100 + " " + "%";
+            document.getElementById("display-2").innerHTML = "Percentage : " + percentage;
+        }
+    </script>
+</body>
+</html>
