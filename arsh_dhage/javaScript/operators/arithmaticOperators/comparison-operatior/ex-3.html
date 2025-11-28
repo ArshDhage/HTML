@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Checker</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-container{
+        height: 300px;
+        width: 500px;
+        background-color: antiquewhite;
+    }
+    .display-area{
+        height: 15%;
+        width: 90%;background-color: white;
+        border-radius: 10px;
+        margin-left: 25px;
+    }
+</style>
+
+<body>
+    <div class="main-container"> 
+        <h2>Temperature Checker</h2>   
+        <div class="display-area" id="display"></div><br>
+        <label>Enter Temperature (°C): </label><br>
+        <input type="number" id="input-one" placeholder="Enter Temperature"><br><br>
+        <button onclick="temperature()">Check Hot/Cool</button>
+    </div>
+    <script>
+        function temperature() {
+            let temp = document.getElementById("input-one").value;
+            if (temp >= 30) {
+                document.getElementById("display").innerHTML = "It's Hot!";
+                document.getElementById("display").style.color = "red";
+            }
+            else {
+                document.getElementById("display").innerHTML = "It's Cool!";
+                document.getElementById("display").style.color = "blue";
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
