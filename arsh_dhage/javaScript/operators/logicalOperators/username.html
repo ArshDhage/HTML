@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>WELCOME BACK</h2>
+    <input type="text" placeholder="enter email or username">
+</body>
+<script>
+    let userName = "arsh_dhage_18"
+    let input = prompt("Enter your Username");
+    let email = "arshdhage@gmail.com"
+    let password = "arsh@321"
+    let passInput = prompt("Enter Your Password");
+
+    if((input == userName) || (input == email) && (passInput == password)){
+        alert("Login Successful!")
+    }
+    else{
+        alert("Invalid Password!")
+    }
+</script>
+</html>
