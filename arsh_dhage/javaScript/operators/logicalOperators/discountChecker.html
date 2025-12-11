@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Checker</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <h2>Cart Discount Checker</h2>
+        <label>Cart Total ($) :</label><br>
+        <input type="number" id="input-total" placeholder="Enter Number"><br><br>
+        <input type="checkbox" id="checkbox">User is a Member
+        <br><br>
+        <button onclick="discount()">Check Discount</button>
+        <div class="display-area"></div>
+    </div>
+</body>
+<script>
+    function discount() {
+        let d = document.getElementById("input-total").value
+        let y = document.getElementById("checkbox").checked
+        if (d >= 100 && y){
+            alert("Discount Applied👍🏻")
+        }
+        else{
+            alert("Not Applied!")
+        }
+    }
+</script>
+
+</html>
