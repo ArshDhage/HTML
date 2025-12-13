@@ -17,6 +17,14 @@
         align-items: center;
         text-align: center;
     }
+    .main-container{
+        height: 300px;
+        width: 500px;
+        background-color: azure;
+        border-radius: 10px;
+        box-shadow: 5px 5px 50px 2px black;
+        border: 2px solid black;
+    }
 </style>
 
 <body>
@@ -27,7 +35,7 @@
         <input type="checkbox" id="checkbox">User is a Member
         <br><br>
         <button onclick="discount()">Check Discount</button>
-        <div class="display-area"></div>
+        <div class="display-area" id="display"></div>
     </div>
 </body>
 <script>
@@ -35,10 +43,10 @@
         let d = document.getElementById("input-total").value
         let y = document.getElementById("checkbox").checked
         if (d >= 100 && y){
-            alert("Discount Applied👍🏻")
+            document.getElementById("display").innerHTML = "Discount Applied🎉"
         }
         else{
-            alert("Not Applied!")
+            document.getElementById("display").innerHTML = "Discount Not Applied!"
         }
     }
 </script>
