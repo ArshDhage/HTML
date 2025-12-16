@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Even Number Checker</title>
 </head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .main-container{
+        height: 500px;
+        width: 300px;
+    }
+</style>
 <body>
     <div class="main-container">
         <h2>Even Number Checker</h2>
         <h6>(Using Bitwise AND Operator)</h6>
         <label for="">Enter a number:</label><br>
-        <input type="number" id="input">
+        <input type="number" id="input"><br>
+        <div class="display-area" id="display"></div><br>
+        <button onclick="even()">Check Number</button>
     </div>
 </body>
+<script>
+    function even(){
+        let n1 = document.getElementById("input").value
+        let result = (n1 & 1) == 0;
+        if ((n1 & 1) == 0){
+            document.getElementById("display").innerHTML = "It is an Even Number";
+        }
+        else{
+            document.getElementById("display").innerHTML ="It is an Odd Number";
+        }
+    }
+</script>
 </html>
