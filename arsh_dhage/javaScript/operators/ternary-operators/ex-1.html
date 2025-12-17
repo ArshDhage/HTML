@@ -1,24 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odd Even Ckecker</title>
 </head>
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-container {
+        height: 300px;
+        width: 500px;
+        background-color: aqua;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 50px 3px black;
+    }
+
+    label {
+        margin-right: 350px;
+    }
+
+    input {
+        height: 15%;
+        width: 90%;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    button {
+        height: 15%;
+        width: 90%;
+        background-color: green;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .display-area {
+        height: 20%;
+        width: 90%;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+</style>
+
 <body>
     <div class="main-container">
-        <h2>Odd Even Ckecker</h2>
-        <label for="">Enter a Number</label><br>
-        <input type="number" placeholder="Enter Your Number" id="input">
-        <button onclick="even()">Ckeck</button>
+        <h2>Odd-Even Checker</h2>
+        <label>Enter a Number:</label><br>
+        <input type="number" placeholder="Enter Your Number" id="input"><br><br>
+        <button onclick="even()">Check</button><br><br>
         <div class="display-area" id="display"></div>
     </div>
 </body>
 <script>
-    function even(){
+    function even() {
         let number = document.getElementById("input").value;
-        let result = (number % 2) == 0 ? "Is Even" : "Is Odd";
-        document.getElementById("display").innerHTML = result;
+        let result = (number % 2) == 0 ? "This number is Even" : "This Number is Odd!";
+        document.getElementById("display").innerHTML = result
+        if ((number % 2) == 0) {
+            document.getElementById("display").style = "color : green";
+        }
+        else {
+            document.getElementById("display").style = "color : red";
+        }
+
+
     }
 </script>
+
 </html>
