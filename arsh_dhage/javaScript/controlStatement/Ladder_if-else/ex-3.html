@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Classification</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-container {
+        height: 300px;
+        width: 500px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 50px 3px black;
+    }
+
+    label {
+        margin-right: 325px;
+    }
+
+    input {
+        height: 15%;
+        width: 90%;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    button {
+        height: 15%;
+        width: 90%;
+        background-color: green;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .display-area {
+        height: 20%;
+        width: 90%;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <h2>Age Group Classification</h2>
+        <label for="">Enter Your Age:</label><br>
+        <input type="number" placeholder="Enter your age" id="input"><br><br>
+        <button onclick="age()">Classify Age</button><br><br>
+        <div class="display-area" id="display"></div>
+    </div>
+    <script>
+        function age(){
+            let age = document.getElementById("input").value;
+            if(age < 13){
+                document.getElementById("display").innerHTML = "Child";
+            }
+            else if(age < 20){
+                document.getElementById("display").innerHTML = "Teenager";
+            }
+            else if(age < 60){
+                document.getElementById("display").innerHTML = "Adult";
+            }
+            else{
+                document.getElementById("display").innerHTML = "Senior Citizen";
+            }
+        }
+    </script>
+</body>
+</html>
