@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest Number Finder</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-container {
+        height: 500px;
+        width: 500px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 50px 3px black;
+    }
+
+    label {
+        margin-right: 325px;
+    }
+
+    input {
+        height: 10%;
+        width: 90%;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    button {
+        height: 10%;
+        width: 90%;
+        background-color: green;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .display-area {
+        height: 15%;
+        width: 90%;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <h2>Temperature Range Checker</h2>
+        <label for="">Enter Your Number:</label><br>
+        <input type="number" placeholder="Enter First Number" id="input"><br><br>
+        <input type="number" placeholder="Enter Second Number Number" id="input"><br><br>
+        <input type="number" placeholder="Enter First Number" id="input"><br><br>
+        <button onclick="greatest()">Find Greatest Number</button><br><br>
+        <div class="display-area" id="display"></div>
+    </div>
+    <script>
+        function greatest(){
+            let a = document.getElementById("input").value
+            let b = document.getElementById("input").value
+            let c = document.getElementById("input").value
+            if((a <= b < c)){
+                document.getElementById("display").innerHTML = c + " is the greater number";
+            }
+            else if(b <= c < a){
+                document.getElementById("display").innerHTML = a + " is the greater number";
+            }
+            else if(c <= a < b){
+                document.getElementById("display").innerHTML = b + " is the greater number";
+            }
+            else{
+                document.getElementById("display").innerHTML = "All numbers are equal";
+            }
+        }
+    </script>
+</body>
+</html>

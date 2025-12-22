@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculation</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-container {
+        height: 300px;
+        width: 500px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 50px 3px black;
+    }
+
+    label {
+        margin-right: 325px;
+    }
+
+    input {
+        height: 15%;
+        width: 90%;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    button {
+        height: 15%;
+        width: 90%;
+        background-color: green;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .display-area {
+        height: 20%;
+        width: 90%;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <!-- <div class="main-container">
+        <h2>Electricity Bill Calculator</h2>
+        <label for="">Enter Your Units:</label><br>
+        <input type="number" placeholder="Enter total units" id="input"><br><br>
+        <button onclick="bill()">Calculate Bill</button><br><br>
+        <div class="display-area" id="display"></div>
+    </div> -->
+    <script>
+        // function bill(){
+            let units = prompt("")
+            let bill = "";
+            if (units <= 50){
+            bill = units * 7 ;
+        }
+        else if(units <= 150){
+            bill = ((50 * 7) + ((units - 50) * 8) );
+        }
+        else if (units <= 250){
+            bill = ((50 * 7) + (100 * 8) + ((units - 150) * 12) );
+        }
+        else{
+            bill = ((units * 15));
+        }
+        let surcharge = bill * 0.20
+        let total = surcharge + bill
+        // }
+         alert(total)
+    </script>
+</body>
+</html>
