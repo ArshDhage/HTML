@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Withdrawl</title>
+</head>
+<body>
+    <div class="main-container">
+        <h2>ATM Withdrawl</h2>
+        <div class="display-area" id="display"></div>
+        <input type="number" placeholder="Enter amount to Withdrawl" id="input">
+        <button onclick="withdrawl()">Withdraw</button>
+        <div class="display-1" id="display-one"></div>
+    </div>
+    <script>
+        function withdrawl(){
+            let Amount = 50000
+            let wAmount = document.getElementById("input").value;
+            let balance = "";
+
+            if(Amount >= 0){
+                if(Amount <= balance){
+                    balance = totalAmount - wAmount
+                    document.getElementById("display").innerHTML = balance;
+                    document.getElementById("display-one").innerHTML = "Withdrawl Successful";
+                }
+                else{
+                    document.getElementById("display").innerHTML = "Insufficient Balance!";
+                    
+                }
+            }
+            else{
+                document.getElementById("display").innerHTML = "Insufficient Balance!";
+            }
+                  
+        }
+    </script>
+</body>
+</html>

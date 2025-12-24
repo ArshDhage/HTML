@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Selector</title>
+</head>
+<body>
+    <label>Gender</label><br>
+    <input type="radio" name="gender" id="male" value="male">
+    <label>Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label>Female</label>
+    <br>
+    <p id="demo"></p>
+    <button onclick="getGender()">Submit</button>
+    <script>
+        function getGender(){
+            let gender = "";
+            if(document.getElementById("male").checked){
+                gender = "Male"
+            }
+            else if(document.getElementById("female").checked){
+                gender = "Female"
+            }
+            else{
+                gender = "please select gender"
+            }
+            document.getElementById("demo").innerHTML = gender;
+        }
+    </script>
+</body>
+</html>
