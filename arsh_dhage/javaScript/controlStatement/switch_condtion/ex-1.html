@@ -41,7 +41,8 @@
         border-radius: 10px;
         font-size: 20px;
     }
-    h2{
+
+    h2 {
         color: red;
     }
 
@@ -58,24 +59,41 @@
 <body>
     <div class="main-container">
         <h2>🍕Pizza Menu</h2>
-        <!-- <input type="number" id="input" placeholder="Enter Your Amount"> -->
-        <button onclick="pizza()" id="amount-1">🍕 Small Pizza ₹150</button><br>
-        <button onclick="pizza()" id="amount-2">🍕🍕 Medium Pizza ₹250</button><br>
-        <button onclick="pizza()" id="amount-3">🍕🍕🍕 Large Pizza ₹350</button><br>
+        <button onclick="smallPizza()" id="amount-1">🍕 Small Pizza ₹150</button><br>
+        <button onclick="mediumPizza()" id="amount-2">🍕🍕 Medium Pizza ₹250</button><br>
+        <button onclick="largePizza()" id="amount-3">🍕🍕🍕 Large Pizza ₹350</button><br>
         <div class="display-area" id="display"></div>
     </div>
     <script>
+        let prize = 0;
+        // Function one
         function pizza() {
-            let amount = ""
-            if (amount-1 >= 150) {
-               amount = document.getElementById("display").innerHTML = "You Selected Small Pizza: ₹150"
+            switch (prize) {
+                case 150:
+                    document.getElementById("display").innerHTML = "You Selected Small Pizza: ₹150";
+                    break;
+
+                case 250:
+                    amount = document.getElementById("display").innerHTML = "You Selected Medium Pizza: ₹250";
+                    break;
+
+                default:
+                    amount = document.getElementById("display").innerHTML = "You Selected Large Pizza: ₹350"
             }
-            else if (amount-2 >= 250) {
-               amount = document.getElementById("display").innerHTML = "You Selected Medium Pizza: ₹250"
-            }
-            else if (amount-3 >= 350) {
-               amount = document.getElementById("display").innerHTML = "You Selected Large Pizza: ₹350"
-            }
+        }
+
+        // Other Functions
+        function smallPizza() {
+            prize = 150;
+            pizza()
+        }
+        function mediumPizza() {
+            prize = 250;
+            pizza()
+        }
+        function largePizza() {
+            prize = 350;
+            pizza()
         }
     </script>
 </body>
