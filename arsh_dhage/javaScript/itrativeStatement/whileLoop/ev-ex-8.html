@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="display-1"></p>
+    <p id="display-2"></p>
+    <p id="display-3"></p>
+    <p id="display-4"></p>
+    <script>
+        let n = prompt("Enter a number")
+        
+        if (n % 2 == 0) {
+            let i = 1;
+            while (i <= 10) {
+                // console.log();
+                document.getElementById("display-1").innerHTML = n + " x " + i + " = " + i * n + "<br>";
+                i++
+            }
+        }
+    </script>
+</body>
+
+</html>
