@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour nesting</title>
+</head>
+<body>
+    <script>
+        let min = 60;
+        let a = 1;
+        let sum = 0;
+        while(a <= 24){
+            console.log(a + " min")
+            // for minute
+            let b = 1;
+            while(b <= min){
+                console.log(b);
+                sum++
+                b++
+            }
+            a++
+        }
+        console.log("Total = " + sum)
+
+    </script>
+</body>
+</html>

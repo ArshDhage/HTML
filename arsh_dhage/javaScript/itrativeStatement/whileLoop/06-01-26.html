@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting While Loop</title>
+</head>
+
+<body>
+    <script>
+        // Nesting in while loop.
+        let a = 1;
+        const j = 7;
+        const k = 3;
+        let count = 0;
+        while (a <= j) {
+            console.log(a);
+            let b = 1
+            while (b <= k) {
+                console.log(b + "*")
+                count++
+                b++
+            }
+            a++
+        }
+        console.log("Total = " + count)
+    </script>
+</body>
+
+</html>
