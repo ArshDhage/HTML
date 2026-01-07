@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Alphabets in While Loop</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <script>
+        let i = 97;
+        let k = 1;
+        // let n = 122;
+        while (k <= 5) {
+            let j = 1;
+            let row = " ";
+            while(j <= k){
+                let a = String.fromCharCode(i);
+                // console.log(String.fromCharCode(i));
+                row += a + " ";
+                j++;
+            }
+            // console.log(String.fromCharCode(i));
+            //  document.getElementById("display").innerHTML += String.fromCharCode(i) + "<br>";
+            k++;
+            console.log(row);
+            i++
+        }
+    </script>
+</body>
+
+</html>

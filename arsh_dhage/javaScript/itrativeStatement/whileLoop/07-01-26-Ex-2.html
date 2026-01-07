@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop Pattern Problems</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        let i = 1;
+        let n = prompt("Enter the value for n");
+        while(i <= n){
+            let row = "* ";
+            let j = 1;
+            while(j <= i){
+                row += j + " ";
+                j++
+            }
+            console.log(row)
+            document.getElementById("display").innerHTML += row + "<br>"
+            i++
+        }
+    </script>
+</body>
+</html>
