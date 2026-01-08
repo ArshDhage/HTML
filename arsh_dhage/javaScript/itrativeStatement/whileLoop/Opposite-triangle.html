@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = 4;
+        let i = 1;
+        while (i <= n) {
+            let j = i;
+            let line = " ";
+            while (j <= n) {
+                line += "* "
+                j++;
+            }
+            console.log(line);
+            // document.getElementById("display").innerHTML += line + "<br>";
+            i++;
+        }
+
+        
+        let a = 1;
+        let d = 4;
+        while (a <= d) {
+            let stars = "";
+            let b = 1;
+            while (b <= a) {
+                stars += " *";
+                b++;
+            }
+            console.log(stars);
+            a++;
+        }
+    </script>
+</body>
+
+</html>
