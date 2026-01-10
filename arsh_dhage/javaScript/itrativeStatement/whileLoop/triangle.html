@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<pre id="print"></pre>
+
+<body>
+    <div id="print"></div>
+    <script>
+        let i = 1;
+        let n = prompt("Enter value for n");
+        while (i <= n) {
+            let row = " ";
+            let j = 1;
+            while (j <= i ) {
+               if (i == 1 || i==j || j==1 || i==n){
+                row += " * "
+               }
+               else{
+                row += "   ";
+               }
+               j++;
+            }
+            console.log( row  )
+            document.getElementById("print").innerHTML += row  +  " <br>" 
+            i++;
+        }
+    </script>
+</body>
+
+</html>
