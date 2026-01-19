@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise One</title>
+</head>
+
+<body>
+    <script>
+        // function sayHello(){
+        //     return "Hello";
+        // }
+        // function sayBye(){
+        //     return "Bye";
+        // }
+
+        // let Hello = sayHello();
+        // let Bye = sayBye();
+        // alert(Hello + " " + Bye);
+
+        function add(a, b) {
+            return a + b;
+        }
+        function sub(a, b) {
+            return a - b;
+        }
+        function div(a, b) {
+            return a / b;
+        }
+        function multi(a, b) {
+            return a * b;
+        }
+        function input(a, b) {
+            let A = Number(prompt("Enter value for A : "));
+            let B = Number(prompt("Enter value for B : "));
+
+            let Add = add(A, B);
+            let Sub = sub(A, B);
+            let Div = div(A, B);
+            let Multi = multi(A, B);
+            
+            console.log(Add + " " + Sub + " " + Div + " " + Multi)
+        }
+        input()
+
+        
+    </script>
+</body>
+
+</html>
