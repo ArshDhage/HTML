@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion Function</title>
+</head>
+
+<body>
+    <script>
+
+        let i = 1;
+        function myFunction() {
+            if (i <= 5) {
+                console.log("*")
+                i++;
+                myFunction()
+            }
+        }
+        myFunction()
+        
+        let reverseStr = "";
+        let string = "EVERYTHINGS";
+        let a = string.length;
+        function reverseString(){
+            if(a >= 0){
+                // console.log(string.charAt(a));
+                reverseStr += string.charAt(a)
+                a--;
+                reverseString()
+            }
+        }
+        reverseString()
+        console.log(reverseStr)
+    </script>
+</body>
+
+</html>
