@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Websites</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+            >
+              <svg
+                class="bi me-2"
+                width="40"
+                height="32"
+                role="img"
+                aria-label="Bootstrap"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <li>
+                <a href="#" class="nav-link px-2 link-secondary">Home</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 link-body-emphasis">Cars</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 link-body-emphasis"
+                  >Book Car</a
+                >
+              </li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </form>
+            <!-- <div class="dropdown text-end">
+              <a
+                href="#"
+                class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </header>
+
+      <!-- Header End -->
+
+      <!-- Carousel Start -->
+      <div
+        id="myCarousel"
+        class="carousel slide mb-6 pointer-event"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class=""
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class=""
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class="active"
+            aria-current="true"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/id/1007947546/photo/private-toyota-fortuner-suv-car.jpg?s=612x612&w=0&k=20&c=KykkgIFRShN72i1CCrv3z09bzgLm2pjau4Wk4xghbuY="
+              alt="Fortuner"
+              height="800px"
+              width="100%"
+            />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Expensive Car on rent for Parties</h1>
+                <p class="opacity-75">
+                  Expentive car on rent for Parties & Marriages.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active carousel-item-start">
+            <img
+              src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/41564/hyundai-creta-right-front-three-quarter9.jpeg?q=80"
+              alt="Creta"
+              height="800px"
+              width="100%"
+            />
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Car for personal trip</h1>
+                <p>Car for your personal trip with extra safety features.</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Learn more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-next carousel-item-start">
+            <img
+              src="https://www.indiacarnews.com/wp-content/uploads/2022/04/New-Maruti-Ertiga-Vs-Old.jpg"
+              alt="Ertiga"
+              height="800px"
+              width="100%"
+            />
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Car for a family trip</h1>
+                <p>car for a family trip with extra space and comfort</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel End -->
+
+      <!-- Thumabnail Start -->
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!-- car 1 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="https://imagecdn.zigwheels.ae/large/gallery/exterior/40/424/toyota-fortuner-57147.jpg"
+                  alt="Fortuner"
+                  height="250px"
+                />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="https://imgd.aeplcdn.com/642x336/n/cw/ec/106815/creta-exterior-right-front-three-quarter-6.png?isig=0&q=80"
+                  alt="Creta"
+                  height="250px"
+                />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="https://stimg2.cardekho.com/images/carNewsEditorImages/userimages/20180418_192103/21702/maruti0.jpg?impolicy=resize&imwidth=420"
+                  alt="Ertiga"
+                  height="250px"
+                />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="https://static-cdn.cars24.com/prod/new-car-cms/Toyota_Innova_Crysta_exterior_9_6c3f5e4a72.png?w=640&dpr=3&optimize=low&format=auto&quality=50"
+                  alt="Ennova"
+                  height="250px"
+                />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Car 5 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="https://spn-sta.spinny.com/blog/20230217180351/Harrier-red-1160x769.webp?compress=true&quality=80&w=1200&dpr=2.6"
+                  alt="Harrier"
+                  height="250px"
+                />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View More
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Car 6 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/190525/mahindra-scorpio-left-front-three-quarter0.jpeg?isig=0&wm=0"
+                  alt="Scorpio Classic"
+                  height="250px"
+                />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Car 7 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  aria-label="Placeholder: Thumbnail"
+                  class="bd-placeholder-img card-img-top"
+                  height="225"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Car 8 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  aria-label="Placeholder: Thumbnail"
+                  class="bd-placeholder-img card-img-top"
+                  height="225"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Car 9 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  aria-label="Placeholder: Thumbnail"
+                  class="bd-placeholder-img card-img-top"
+                  height="225"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Thumbnail End -->
+
+      <!-- Booking Form Start -->
+
+      <!-- Booking Form End -->
+    </main>
+  </body>
+</html>
